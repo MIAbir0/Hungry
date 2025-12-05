@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/Style.css">
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <a href="#home" class="logo"><i class="fas fa-utensils"></i> Hungry </a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#dishes">Popular Dishes</a>
+            <a href="Cuisine.html">Cuisine</a>
+            <a href="#about">About</a>
+            <a href="Order.html">Order</a>
+            <a href="Dashboard.html">Account</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-shopping-cart" id="cart-toggle"><span id="cart-count">0</span></a>
+        </div>
+    </header>
+
+    <!-- Search Form -->
+    <form action="" id="search-form">
+        <input type="search" id="search-box" placeholder="Search for dishes (e.g., pasta, fish)..." autocomplete="off">
+        <label for="search-box" class="fas fa-search"></label>
+        <div id="search-results" class="search-results" aria-live="polite"></div>
+        <i class="fas fa-times" id="close" aria-label="Close search"></i>
+    </form>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-slider swiper">
+            <!-- ✅ Corrected swiper-wrapper -->
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="slide swiper-slide" data-price="600">
+                    <div class="content">
+                        <span>Our Special Dishes</span>
+                        <h3>Kalavuna</h3>
+                        <p>A bangladeshi spicy beef dish.</p>
+                        <button class="btn add-to-cart" data-name="Kalavuna" data-price="600" data-image="Images/swiper-1.png">Add to Cart</button>
+                    </div>
+                    <div class="image">
+                        <img src="Images/swiper-1.png" alt="Kalavuna">
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide swiper-slide" data-price="500">
+                    <div class="content">
+                        <span>Our Special Dishes</span>
+                        <h3>Tandoori Chicken</h3>
+                        <p>An indian famous dish made with Chicken.</p>
+                        <button class="btn add-to-cart" data-name="Tandoori Chicken" data-price="500" data-image="Images/Swiper-2.png">Add to Cart</button>
+                    </div>
+                    <div class="image">
+                        <img src="Images/Swiper-2.png" alt="Tandoori Chicken">
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide swiper-slide" data-price="550">
+                    <div class="content">
+                        <span>Our Special Dishes</span>
+                        <h3>Sausages Pasta</h3>
+                        <p>An italian famous dish made with pasta and sausages.</p>
+                        <button class="btn add-to-cart" data-name="Sausages Pasta" data-price="550" data-image="Images/Swiper-3.png">Add to Cart</button>
+                    </div>
+                    <div class="image">
+                        <img src="Images/Swiper-3.png" alt="Italian Sausage Pasta">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Swiper Controls -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Popular Dishes Section -->
+    <section class="dishes" id="dishes">
+        <h1 class="heading">Popular Dishes</h1>
+        
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Mansher Jhol"
+                    data-price="550"
+                    data-image="Images/Bengali/Mansher_Jhol.jpg"
+                    data-description="Slow-cooked beef curry enriched with potatoes and warm spices."></a>
+                <img src="Images/Bengali/Mansher_Jhol.jpg" alt="Mansher Jhol">
+                <h3>Mangsher Jhol</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">550 TK</div>
+                <button class="btn add-to-cart" data-name="Mansher Jhol" data-price="550" data-image="Images/Bengali/Mansher_Jhol.jpg">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Macher Jhol"
+                    data-price="450"
+                    data-image="Images/Bengali/macher_jhol.jpg"
+                    data-description="Classic Bengali fish curry simmered with potatoes, tomatoes, and mustard oil."></a>
+                <img src="Images/Bengali/macher_jhol.jpg" alt="Macher Jhol">
+                <h3>Macher Jhol</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">450 TK</div>
+                <button class="btn add-to-cart" data-name="Macher Jhol" data-price="450" data-image="Images/Bengali/macher_jhol.jpg">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Shorshe Ilish"
+                    data-price="400"
+                    data-image="Images/Bengali/Sorshe_ilish.jpg"
+                    data-description="Iconic hilsa fish steamed in a rich mustard paste and green chilies."></a>
+                <img src="Images/Bengali/Sorshe_ilish.jpg" alt="Shorshe Ilish">
+                <h3>Shorshe Ilish</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">400 TK</div>
+                <button class="btn add-to-cart" data-name="Shorshe Ilish" data-price="400" data-image="Images/Bengali/Sorshe_ilish.jpg">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Bolognese"
+                    data-price="500"
+                    data-image="Images/Italian/Bolognese.jpg"
+                    data-description="Traditional Italian ragù with minced beef, tomatoes, and herbs over pasta."></a>
+                <img src="Images/Italian/Bolognese.jpg" alt="Bolognese">
+                <h3>Bolognese</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">500 TK</div>
+                <button class="btn add-to-cart" data-name="Bolognese" data-price="500" data-image="Images/Italian/Bolognese.jpg">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Bruschetta"
+                    data-price="650"
+                    data-image="Images/Italian/Bruschetta.jpg"
+                    data-description="Toasted ciabatta topped with marinated tomatoes, garlic, and basil."></a>
+                <img src="Images/Italian/Bruschetta.jpg" alt="Bruschetta">
+                <h3>Bruschetta</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">650 TK</div>
+                <button class="btn add-to-cart" data-name="Bruschetta" data-price="650" data-image="Images/Italian/Bruschetta.jpg">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Carbonara"
+                    data-price="400"
+                    data-image="Images/Italian/Carbonara.jpg"
+                    data-description="Creamy spaghetti tossed with eggs, pecorino, and crispy pancetta."></a>
+                <img src="Images/Italian/Carbonara.jpg" alt="Carbonara">
+                <h3>Carbonara</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">400 TK</div>
+                <button class="btn add-to-cart" data-name="Carbonara" data-price="400" data-image="Images/Italian/Carbonara.jpg">Add To Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <p>Welcome to Hungry, where culinary excellence meets authentic flavors. We are passionate about bringing you the finest dishes from around the world, crafted with love and served with care.</p>
+                <p>Our kitchen combines traditional recipes with modern techniques to create unforgettable dining experiences. From spicy Bangladeshi curries to classic Italian pasta, every dish tells a story of culture and tradition.</p>
+                <p>Join us on a journey of taste and discover why we're the favorite choice for food lovers everywhere.</p>
+                
+                <div class="services-row">
+                    <div class="service-item">
+                        <i class="fas fa-truck"></i>
+                        <span>Free Delivery</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-credit-card"></i>
+                        <span>Easy Payment</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 Service</span>
+                    </div>
+                </div>
+                
+                <div class="contact-section">
+                    <a href="tel:+88015********" class="contact-btn">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Panel -->
+    <aside id="cart-panel" aria-hidden="true">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="cart-close" aria-label="Close Cart">&times;</button>
+        </div>
+        <div id="cart-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total">Total: <span id="cart-total">0</span> TK</div>
+            <button id="cart-clear" class="btn">Clear Cart</button>
+            <button id="cart-order" class="btn primary">Order Now</button>
+        </div>
+    </aside>
+
+    <!-- Dish Detail Modal -->
+    <div id="dish-modal" class="dish-modal" aria-hidden="true">
+        <div class="dish-modal__content">
+            <button class="dish-modal__close" aria-label="Close details">&times;</button>
+            <div class="dish-modal__image">
+                <img src="" alt="Dish preview" id="dish-modal-image">
+            </div>
+            <div class="dish-modal__info">
+                <h3 id="dish-modal-name"></h3>
+                <p id="dish-modal-desc"></p>
+                <div class="dish-modal__price">Price: <span id="dish-modal-price"></span> TK</div>
+                <div class="dish-modal__actions">
+                    <button id="modal-add-cart" class="btn">Add To Cart</button>
+                    <button id="modal-buy-now" class="btn primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

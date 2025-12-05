@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order | Hungry</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+<body>
+
+    <header>
+        <a href="../index.html" class="logo"><i class="fas fa-utensils"></i> Hungry </a>
+
+        <nav class="navbar">
+            <a href="../index.html#home">Home</a>
+            <a href="../index.html#dishes">Popular Dishes</a>
+            <a href="Cuisine.html">Cuisine</a>
+            <a href="../index.html#about">About</a>
+            <a href="Order.html" class="active">Order</a>
+            <a href="Dashboard.html">Account</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-shopping-cart" id="cart-toggle"><span id="cart-count">0</span></a>
+        </div>
+    </header>
+
+    <form action="" id="search-form">
+        <input type="search" id="search-box" placeholder="Search for dishes (e.g., pasta, fish)..." autocomplete="off">
+        <label for="search-box" class="fas fa-search"></label>
+        <div id="search-results" class="search-results" aria-live="polite"></div>
+        <i class="fas fa-times" id="close" aria-label="Close search"></i>
+    </form>
+
+    <main class="order-page">
+        <section class="order-hero">
+            <div class="order-hero__text">
+                <p class="eyebrow">Place Your Order</p>
+                <h1>Fresh food delivered right to your doorstep</h1>
+                <p>Fill out the form below with your delivery details and preferred dishes. Our team will confirm and keep you updated every step of the way.</p>
+            </div>
+            <div class="order-hero__badge">
+                <span>24/7 Service</span>
+                <strong>Fast Delivery</strong>
+            </div>
+        </section>
+
+        <section class="order-grid">
+            <form id="order-form" class="order-form">
+                <h2>Order Preferences</h2>
+                <div class="form-grid">
+                    <label>
+                        Delivery Date
+                        <input type="date" name="deliveryDate" required>
+                    </label>
+                    <label>
+                        Payment Method
+                        <select name="payment" required>
+                            <option value="">Select payment</option>
+                            <option value="Cash on Delivery">Cash on Delivery</option>
+                            <option value="Card on Delivery">Card on Delivery</option>
+                            <option value="Bkash/Nagad">Bkash / Nagad</option>
+                        </select>
+                    </label>
+                </div>
+
+                <label class="wide">
+                    Delivery Instructions
+                    <textarea name="instructions" rows="4" placeholder="Tell us about spice level, cutlery needs, or any allergies..."></textarea>
+                </label>
+
+                <div class="order-form__actions">
+                    <button type="reset" class="btn ghost">Clear</button>
+                    <button type="submit" class="btn primary">Place Order</button>
+                </div>
+            </form>
+
+            <aside class="order-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-card">
+                    <div id="summary-items" class="summary-items">
+                        <p class="summary-empty">Your cart is empty. Go back and add some dishes!</p>
+                    </div>
+                    <div class="summary-line">
+                        <span>Delivery Date</span>
+                        <strong id="summary-delivery">—</strong>
+                    </div>
+                    <div class="summary-line summary-total">
+                        <span>Cart Total</span>
+                        <strong id="summary-total">0 TK</strong>
+                    </div>
+                </div>
+
+                <div class="order-history">
+                    <h3>Past Orders</h3>
+                    <div id="order-history-list" class="history-list"></div>
+                    <p id="order-history-empty" class="history-empty">Sign in to view your order history.</p>
+                </div>
+
+                <div class="summary-info">
+                    <p>Need help or placing a bulk order? Reach us anytime.</p>
+                    <a href="tel:+8801512345678" class="contact-link"><i class="fas fa-phone"></i> +880 15-1234-5678</a>
+                    <a href="mailto:orders@hungry.com" class="contact-link"><i class="fas fa-envelope"></i> orders@hungry.com</a>
+                </div>
+
+                <div class="summary-hint">
+                    <i class="fas fa-info-circle"></i>
+                    <p>We will call you to confirm availability and final pricing before dispatch.</p>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <aside id="cart-panel" aria-hidden="true">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="cart-close" aria-label="Close Cart">&times;</button>
+        </div>
+        <div id="cart-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total">Total: <span id="cart-total">0</span> TK</div>
+            <button id="cart-clear" class="btn">Clear Cart</button>
+            <button id="cart-order" class="btn primary">Order Now</button>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

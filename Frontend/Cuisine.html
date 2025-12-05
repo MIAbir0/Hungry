@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hungry</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="CSS/Style.css">
+    </head>
+
+    <body>
+        
+        <header>
+            <a href="../index.html" class="logo"><i class="fas fa-utensils"></i> Hungry </a>
+
+            <nav class="navbar">
+                <a href="#bengali">Bengali Cuisine</a>
+                <a href="#indian">Indian Cuisine</a>
+                <a href="#italian">Italian Cuisine</a>
+            <a href="Order.html">Order</a>
+            <a href="Dashboard.html">Account</a>
+            </nav>
+
+            <div class="icons">
+                <i class="fas fa-bars" id="menu-bars"></i>
+                <i class="fas fa-search" id="search-icon"></i>
+                <a href="#" class="fas fa-shopping-cart" id="cart-toggle"><span id="cart-count">0</span></a>
+            </div>
+        </header>
+        
+        <form action="" id="search-form">
+            <input type="search" id="search-box" placeholder="Search for dishes (e.g., kalavuna, pasta)..." autocomplete="off">
+            <label for="search-box" class="fas fa-search"></label>
+            <div id="search-results" class="search-results" aria-live="polite"></div>
+            <i class="fas fa-times" id="close" aria-label="Close search"></i>
+        </form>
+
+        <section class="dishes" id="bengali">
+            <h1 class="heading">Bengali Cuisine</h1>
+
+            <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Mansher Jhol"
+                    data-price="550"
+                    data-image="Images/Bengali/Mansher_Jhol.jpg"
+                    data-description="Slow-cooked beef curry enriched with potatoes and warm spices."></a>
+                <img src="Images/Bengali/Mansher_Jhol.jpg" alt="Mansher Jhol">
+                <h3>Mangsher Jhol</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">550 TK</div>
+                <button class="btn add-to-cart" data-name="Mansher Jhol" data-price="550">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Aloo Posto"
+                    data-price="200"
+                    data-image="Images/Bengali/alo_posto.jpg"
+                    data-description="Poppy seed paste tossed with potatoes, mustard oil, and green chilies."></a>
+                <img src="Images/Bengali/alo_posto.jpg" alt="Aloo Posto">
+                <h3>Aloo Posto</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">200 TK</div>
+                <button class="btn add-to-cart" data-name="alo_posto" data-price="200">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Mutton Biryani"
+                    data-price="350"
+                    data-image="Images/Bengali/mutton_biriyani.jpg"
+                    data-description="Aromatic rice layered with marinated mutton and saffron."></a>
+                <img src="Images/Bengali/mutton_biriyani.jpg" alt="Mutton Biryani">
+                <h3>Mutton Biryani</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">350 TK</div>
+                <button class="btn add-to-cart" data-name="Mutton Biryani" data-price="350">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Bhuna Khichuri"
+                    data-price="220"
+                    data-image="Images/Bengali/vuna_khichuri.jpg"
+                    data-description="Comforting rice and lentils slow-cooked with spices and veggies."></a>
+                <img src="Images/Bengali/vuna_khichuri.jpg" alt="Khichuri">
+                <h3>Bhuna Khichuri</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">220 TK</div>
+                <button class="btn add-to-cart" data-name="vuna_khichuri" data-price="220">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Vegetable Khichuri"
+                    data-price="200"
+                    data-image="Images/Bengali/vegetable_khichuri.jpg"
+                    data-description="Light khichuri with seasonal vegetables and clarified butter."></a>
+                <img src="Images/Bengali/vegetable_khichuri.jpg" alt="Khichdi">
+                <h3>Vegetable Khichuri</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">200 TK</div>
+                <button class="btn add-to-cart" data-name="vegetable_khichuri" data-price="200">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Murgir Jhol"
+                    data-price="320"
+                    data-image="Images/Bengali/murgir_jhol.jpg"
+                    data-description="Homestyle chicken curry with potatoes and a light gravy."></a>
+                <img src="Images/Bengali/murgir_jhol.jpg" alt="macher_jhol">
+                <h3>Murgir Jhol</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">320 TK</div>
+                <button class="btn add-to-cart" data-name="murgir_jhol" data-price="320">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Bengali Special"
+                    data-price="500"
+                    data-image="Images/Bengali/Bengali_speci.jpg"
+                    data-description="Complete Bengali platter with rice, fish, veggies, and dessert."></a>
+                <img src="Images/Bengali/Bengali_speci.jpg" alt="Bengali Thali">
+                <h3>Bengali Special</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">500 TK</div>
+                <button class="btn add-to-cart" data-name="Bengali_speci" data-price="500">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Macher Jhol"
+                    data-price="300"
+                    data-image="Images/Bengali/macher_jhol.jpg"
+                    data-description="Tangy fish curry simmered with tomatoes and potatoes."></a>
+                <img src="Images/Bengali/macher_jhol.jpg" alt="Fish Curry">
+                <h3>Macher Jhol</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">300 TK</div>
+                <button class="btn add-to-cart" data-name="macher_jhol" data-price="300">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Morog Polao"
+                    data-price="280"
+                    data-image="Images/Bengali/motog_polao.jpg"
+                    data-description="Fragrant polao cooked with tender chicken and nuts."></a>
+                <img src="Images/Bengali/motog_polao.jpg" alt="motog_polao">
+                <h3>Morog Polao</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">280 TK</div>
+                <button class="btn add-to-cart" data-name="motog_polao" data-price="280">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Beef Kala Bhuna"
+                    data-price="400"
+                    data-image="Images/Bengali/kalavuna.png"
+                    data-description="Rich beef curry slow-cooked until dark and aromatic."></a>
+                <img src="Images/Bengali/kalavuna.png" alt="Beef Kala Bhuna">
+                <h3>Beef Kala Bhuna</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">400 TK</div>
+                <button class="btn add-to-cart" data-name="Beef Kala Bhuna" data-price="400">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Chingri Polao"
+                    data-price="550"
+                    data-image="Images/Bengali/Chingri_polaw.jpg"
+                    data-description="Royal prawn polao infused with saffron and ghee."></a>
+                <img src="Images/Bengali/Chingri_polaw.jpg" alt="Chingri_polaw">
+                <h3>Chingri Polao</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">550 TK</div>
+                <button class="btn add-to-cart" data-name="Chingri_polaw" data-price="550">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Shorshe Ilish"
+                    data-price="400"
+                    data-image="Images/Bengali/Sorshe_ilish.jpg"
+                    data-description="Hilsa steamed in tangy mustard sauce and green chilies."></a>
+                <img src="Images/Bengali/Sorshe_ilish.jpg" alt="Shorshe Ilish">
+                <h3>Shorshe Ilish</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">400 TK</div>
+                <button class="btn add-to-cart" data-name="Shorshe Ilish" data-price="450">Add To Cart</button>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section class="dishes" id="indian">
+            <h1 class="heading">Indian Cuisine</h1>
+
+            <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Chana Masala"
+                    data-price="350"
+                    data-image="Images/Indian/chana_masala.jpg"
+                    data-description="Spiced chickpea curry simmered with tomatoes and garam masala."></a>
+                <img src="Images/Indian/chana_masala.jpg" alt="Chana Masala">
+                <h3>Chana Masala</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">350 TK</div>
+                <button class="btn add-to-cart" data-name="Chana Masala" data-price="350">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Kadai Paneer"
+                    data-price="400"
+                    data-image="Images/Indian/kadai_paneer.jpg"
+                    data-description="Paneer tossed with peppers, onions, and kadai spices."></a>
+                <img src="Images/Indian/kadai_paneer.jpg" alt="Kadai Paneer">
+                <h3>Kadai Paneer</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">400 TK</div>
+                <button class="btn add-to-cart" data-name="kadai_paneer" data-price="350">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Matar Paneer"
+                    data-price="400"
+                    data-image="Images/Indian/matar_panir.jpg"
+                    data-description="Green peas and cottage cheese in a creamy tomato gravy."></a>
+                <img src="Images/Indian/matar_panir.jpg" alt="Matar Paneer">
+                <h3>Matar Paneer</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">400 TK</div>
+                <button class="btn add-to-cart" data-name="matar_panir" data-price="400">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Paneer Butter Masala"
+                    data-price="550"
+                    data-image="Images/Indian/paneer_Butter_Masala.jpg"
+                    data-description="Silky tomato sauce enriched with butter and cashew, topped with paneer."></a>
+                <img src="Images/Indian/paneer_Butter_Masala.jpg" alt="Paneer Butter Masala">
+                <h3>Paneer Butter Masala</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">550 TK</div>
+                <button class="btn add-to-cart" data-name="paneer_Butter_Masala" data-price="550">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Paneer Tikka Masala"
+                    data-price="500"
+                    data-image="Images/Indian/paneer_tikka_masala.jpg"
+                    data-description="Charred paneer tikka cubes simmered in a spiced gravy."></a>
+                <img src="Images/Indian/paneer_tikka_masala.jpg" alt="Paneer Tikka Masala">
+                <h3>Paneer Tikka Masala</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">500 TK</div>
+                <button class="btn add-to-cart" data-name="paneer_tikka_masala" data-price="500">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Rajma Masala"
+                    data-price="350"
+                    data-image="Images/Indian/rajma_masala.jpg"
+                    data-description="Kidney beans cooked in onions, tomatoes, and house spices."></a>
+                <img src="Images/Indian/rajma_masala.jpg" alt="Rajma Masala">
+                <h3>Rajma Masala</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">350 TK</div>
+                <button class="btn add-to-cart" data-name="rajma_masala" data-price="350">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Tandoori Chicken"
+                    data-price="450"
+                    data-image="Images/Indian/Tandoori_Chicken.jpg"
+                    data-description="Yogurt-marinated chicken roasted in a clay oven."></a>
+                <img src="Images/Indian/Tandoori_Chicken.jpg" alt="Tandoori Chicken">
+                <h3>Tandori Chicken</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">450 TK</div>
+                <button class="btn add-to-cart" data-name="Tandoori_Chicken" data-price="450">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Veg Dum Biriyani"
+                    data-price="300"
+                    data-image="Images/Indian/Veg_Dum_Biriyani.jpg"
+                    data-description="Layered biryani with veggies, basmati rice, and saffron."></a>
+                <img src="Images/Indian/Veg_Dum_Biriyani.jpg" alt="Veg Dum Biryani">
+                <h3>Veg Dum Biriyani</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">300 TK</div>
+                <button class="btn add-to-cart" data-name="Veg_Dum_Biriyani" data-price="300">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Veg Kofta"
+                    data-price="280"
+                    data-image="Images/Indian/Veg_kofta.jpg"
+                    data-description="Crispy vegetable dumplings served in a creamy curry."></a>
+                <img src="Images/Indian/Veg_kofta.jpg" alt="Veg Kofta">
+                <h3>Veg Kofta</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">280 TK</div>
+                <button class="btn add-to-cart" data-name="Veg_kofta" data-price="280">Add To Cart</button>
+            </div>
+    </section>
+
+    <section class="dishes" id="italian">
+            <h1 class="heading">Italian Cuisine</h1>
+
+            <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Arancini"
+                    data-price="300"
+                    data-image="Images/Italian/Arancini.jpg"
+                    data-description="Crispy risotto balls stuffed with cheese and peas."></a>
+                <img src="Images/Italian/Arancini.jpg" alt="Arancini">
+                <h3>Arancini</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">300 TK</div>
+                <button class="btn add-to-cart" data-name="Arancini" data-price="300">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Bistecca Fiorentina"
+                    data-price="760"
+                    data-image="Images/Italian/Bistecca_Fiorentina.jpg"
+                    data-description="Tuscan-style T-bone steak grilled with herbs."></a>
+                <img src="Images/Italian/Bistecca_Fiorentina.jpg" alt="Bistecca_Fiorentina">
+                <h3>Bistecca Fiorentina</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">760 TK</div>
+                <button class="btn add-to-cart" data-name="Bistecca_Fiorentina" data-price="760">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Bolognese"
+                    data-price="500"
+                    data-image="Images/Italian/Bolognese.jpg"
+                    data-description="Slow-simmered meat sauce served with pasta."></a>
+                <img src="Images/Italian/Bolognese.jpg" alt="Bolognese">
+                <h3>Bolognese</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">500 TK</div>
+                <button class="btn add-to-cart" data-name="Bolognese" data-price="500">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Bruschetta"
+                    data-price="650"
+                    data-image="Images/Italian/Bruschetta.jpg"
+                    data-description="Toasted bread topped with marinated tomatoes and basil."></a>
+                <img src="Images/Italian/Bruschetta.jpg" alt="Bruschetta">
+                <h3>Bruschetta</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">650 TK</div>
+                <button class="btn add-to-cart" data-name="Bruschetta" data-price="650">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Carbonara"
+                    data-price="400"
+                    data-image="Images/Italian/Carbonara.jpg"
+                    data-description="Creamy pasta with egg yolks, pecorino, and guanciale."></a>
+                <img src="Images/Italian/Carbonara.jpg" alt="Carbonara">
+                <h3>Carbonara</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">400 TK</div>
+                <button class="btn add-to-cart" data-name="Carbonara" data-price="400">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Carpaccio"
+                    data-price="280"
+                    data-image="Images/Italian/Carpaccio.jpg"
+                    data-description="Thinly sliced raw beef drizzled with olive oil and lemon."></a>
+                <img src="Images/Italian/Carpaccio.jpg" alt="Carpaccio">
+                <h3>Carpaccio</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">280 TK</div>
+                <button class="btn add-to-cart" data-name="Carpaccio" data-price="280">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Gnocchi"
+                    data-price="300"
+                    data-image="Images/Italian/Gnocchi.jpg"
+                    data-description="Potato dumplings served with herb butter sauce."></a>
+                <img src="Images/Italian/Gnocchi.jpg" alt="Gnocchi">
+                <h3>Gnocchi</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">300 TK</div>
+                <button class="btn add-to-cart" data-name="Gnocchi" data-price="300">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Italian Sausage"
+                    data-price="350"
+                    data-image="Images/Italian/Italian_Sausage.jpg"
+                    data-description="Savory sausage cooked with peppers and herbs."></a>
+                <img src="Images/Italian/Italian_Sausage.jpg" alt="Italian Sausage">
+                <h3>Italian Sausage</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">350 TK</div>
+                <button class="btn add-to-cart" data-name="Italian_Sausage" data-price="350">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Lasagne"
+                    data-price="180"
+                    data-image="Images/Italian/Lasagne.jpg"
+                    data-description="Layered pasta baked with meat sauce and cheese."></a>
+                <img src="Images/Italian/Lasagne.jpg" alt="Lasagne">
+                <h3>Lasagne</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">180 TK</div>
+                <button class="btn add-to-cart" data-name="Lasagne" data-price="180">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Melanzane Alla Parmigiana"
+                    data-price="550"
+                    data-image="Images/Italian/Melanzane_Alla_Parmigiana.jpg"
+                    data-description="Baked eggplant layered with tomato sauce and mozzarella."></a>
+                <img src="Images/Italian/Melanzane_Alla_Parmigiana.jpg" alt="Melanzane Alla Parmigiana">
+                <h3>Melanzane Alla Parmigiana</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">550 TK</div>
+                <button class="btn add-to-cart" data-name="Melanzane_Alla_Parmigiana" data-price="550">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Minestrone Soup"
+                    data-price="450"
+                    data-image="Images/Italian/Minestrone_Soup.jpg"
+                    data-description="Vegetable-rich soup with beans and pasta."></a>
+                <img src="Images/Italian/Minestrone_Soup.jpg" alt="Minestrone Soup">
+                <h3>Minestrone Soup</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">450 TK</div>
+                <button class="btn add-to-cart" data-name="Minestrone_Soup" data-price="450">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Pappardelle"
+                    data-price="380"
+                    data-image="Images/Italian/Pappardelle.jpg"
+                    data-description="Broad ribbons of pasta tossed in rich meat sauce."></a>
+                <img src="Images/Italian/Pappardelle.jpg" alt="Pappardelle">
+                <h3>Pappardelle</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">380 TK</div>
+                <button class="btn add-to-cart" data-name="Pappardelle" data-price="380">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Pizza"
+                    data-price="150"
+                    data-image="Images/Italian/pizza.jpg"
+                    data-description="Wood-fired pizza topped with mozzarella and basil."></a>
+                <img src="Images/Italian/pizza.jpg" alt="pizza">
+                <h3>Pizza</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">150 TK</div>
+                <button class="btn add-to-cart" data-name="pizza" data-price="150">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Ribollita"
+                    data-price="300"
+                    data-image="Images/Italian/Ribollita.jpg"
+                    data-description="Hearty Tuscan soup with beans, kale, and bread."></a>
+                <img src="Images/Italian/Ribollita.jpg" alt="Ribollita">
+                <h3>Ribollita</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">300 TK</div>
+                <button class="btn add-to-cart" data-name="Ribollita" data-price="300">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Risotto"
+                    data-price="450"
+                    data-image="Images/Italian/Risotto.jpg"
+                    data-description="Creamy arborio rice cooked with stock and parmesan."></a>
+                <img src="Images/Italian/Risotto.jpg" alt="Risotto">
+                <h3>Risotto</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">450 TK</div>
+                <button class="btn add-to-cart" data-name="Risotto" data-price="450">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Salad Caprese"
+                    data-price="300"
+                    data-image="Images/Italian/Salad_Caprese.jpg"
+                    data-description="Fresh tomatoes, mozzarella, basil, and olive oil."></a>
+                <img src="Images/Italian/Salad_Caprese.jpg" alt="Salad_Caprese">
+                <h3>Salad Caprese</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">300 TK</div>
+                <button class="btn add-to-cart" data-name="Salad_Caprese" data-price="300">Add To Cart</button>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-eye view-details"
+                    data-name="Tagliatelle"
+                    data-price="300"
+                    data-image="Images/Italian/Tagliatelle.jpg"
+                    data-description="Classic egg pasta ribbons served with rich ragù."></a>
+                <img src="Images/Italian/Tagliatelle.jpg" alt="Tagliatelle">
+                <h3>Tagliatelle</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">300 TK</div>
+                <button class="btn add-to-cart" data-name="Tagliatelle" data-price="300">Add To Cart</button>
+            </div>
+        </section>
+
+        <!-- Contact Section (Cuisine Page) -->
+        <section class="contact-section" id="contact">
+            <a href="tel:+88015********" class="contact-btn">Contact Us</a>
+        </section>
+
+        <!-- Dish Detail Modal -->
+        <div id="dish-modal" class="dish-modal" aria-hidden="true">
+            <div class="dish-modal__content">
+                <button class="dish-modal__close" aria-label="Close details">&times;</button>
+                <div class="dish-modal__image">
+                    <img src="" alt="Dish preview" id="dish-modal-image">
+                </div>
+                <div class="dish-modal__info">
+                    <h3 id="dish-modal-name"></h3>
+                    <p id="dish-modal-desc"></p>
+                    <div class="dish-modal__price">Price: <span id="dish-modal-price"></span> TK</div>
+                    <div class="dish-modal__actions">
+                        <button id="modal-add-cart" class="btn">Add To Cart</button>
+                        <button id="modal-buy-now" class="btn primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart Panel for Cuisine Page -->
+        <aside id="cart-panel" aria-hidden="true">
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <button id="cart-close" aria-label="Close Cart">&times;</button>
+            </div>
+            <div id="cart-items"></div>
+            <div class="cart-footer">
+                <div class="cart-total">Total: <span id="cart-total">0</span> TK</div>
+                <button id="cart-clear" class="btn">Clear Cart</button>
+                <button id="cart-order" class="btn primary">Order Now</button>
+            </div>
+        </aside>
+
+        <script src="script.js"></script>
+    </body>
+
+
+
+</html>

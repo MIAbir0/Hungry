@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account | Hungry</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+<body>
+
+    <header>
+        <a href="../index.html" class="logo"><i class="fas fa-utensils"></i> Hungry </a>
+
+        <nav class="navbar">
+            <a href="../index.html#home">Home</a>
+            <a href="../index.html#dishes">Popular Dishes</a>
+            <a href="Cuisine.html">Cuisine</a>
+            <a href="../index.html#about">About</a>
+            <a href="Order.html">Order</a>
+            <a href="Auth.html" class="active">Account</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-shopping-cart" id="cart-toggle"><span id="cart-count">0</span></a>
+        </div>
+    </header>
+
+    <form action="" id="search-form">
+        <input type="search" id="search-box" placeholder="Search for dishes (e.g., pasta, fish)..." autocomplete="off">
+        <label for="search-box" class="fas fa-search"></label>
+        <div id="search-results" class="search-results" aria-live="polite"></div>
+        <i class="fas fa-times" id="close" aria-label="Close search"></i>
+    </form>
+
+    <main class="auth-page">
+
+        <!-- AUTH SECTION (Hidden after login) -->
+        <section class="auth-card" id="authSection">
+            <div class="auth-tabs">
+                <button type="button" class="auth-tab active" data-target="#signup-form">Sign Up</button>
+                <button type="button" class="auth-tab" data-target="#login-form">Log In</button>
+            </div>
+
+            <div class="auth-forms">
+                <form id="signup-form" class="auth-form active">
+                    <h2>Create Account</h2>
+                    <label>
+                        Full Name
+                        <input type="text" name="fullName" placeholder="e.g., Aditi Rahman" required>
+                    </label>
+                    <label>
+                        Email Address
+                        <input type="email" name="email" placeholder="you@example.com" required>
+                    </label>
+                    <label>
+                        Phone Number
+                        <div class="phone-input">
+                            <span class="country-code">+880</span>
+                            <input type="tel" name="phone" placeholder="1XXXXXXXXX" pattern="[0-9]{10,11}" required>
+                        </div>
+                    </label>
+                    <label>
+                        Street Address
+                        <input type="text" name="address" placeholder="House, Road, Area" required>
+                    </label>
+                    <label>
+                        Apartment / Landmark
+                        <input type="text" name="address2" placeholder="Apartment, floor, or nearby landmark">
+                    </label>
+                    <div class="auth-grid">
+                        <label>
+                            City
+                            <input type="text" name="city" placeholder="Dhaka" required>
+                        </label>
+                        <label>
+                            Postal Code
+                            <input type="text" name="postal" placeholder="1216" required>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn primary w-100">Save & Continue</button>
+                </form>
+
+                <form id="login-form" class="auth-form">
+                    <h2>Welcome Back</h2>
+                    <label>
+                        Email Address
+                        <input type="email" name="email" placeholder="you@example.com" required>
+                    </label>
+                    <label>
+                        Phone Number
+                        <div class="phone-input">
+                            <span class="country-code">+880</span>
+                            <input type="tel" name="phone" placeholder="1XXXXXXXXX" pattern="[0-9]{10,11}" required>
+                        </div>
+                    </label>
+                    <button type="submit" class="btn primary w-100">Log In</button>
+                </form>
+            </div>
+
+            <p class="auth-helper">Your saved information will automatically populate the order form for faster checkout.</p>
+        </section>
+
+    </main>
+
+    <aside id="cart-panel" aria-hidden="true">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="cart-close" aria-label="Close Cart">&times;</button>
+        </div>
+        <div id="cart-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total">Total: <span id="cart-total">0</span> TK</div>
+            <button id="cart-clear" class="btn">Clear Cart</button>
+            <button id="cart-order" class="btn primary">Order Now</button>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+    <script>
+        // Redirect to dashboard if already logged in
+        (async function() {
+            const API_BASE = window.__HUNGRY_API_BASE__ || "http://localhost:5000";
+            try {
+                const res = await fetch(API_BASE + "/api/auth/profile", { credentials: "include" });
+                const body = await res.json();
+                if (res.ok && body.success && body.user) {
+                    window.location.href = "Dashboard.html";
+                }
+            } catch (e) {}
+        })();
+    </script>
+</body>
+</html>
