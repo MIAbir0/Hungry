@@ -24,20 +24,17 @@ app.use(cors({
     credentials: true
 }));
 
-// Serve Frontend static files at root level (for index.html)
-app.use(express.static(path.join(__dirname, "../Frontend")));
-
-// Serve Frontend static files at /Frontend/ path (for Frontend HTML files)
-app.use("/Frontend", express.static(path.join(__dirname, "../Frontend")));
+// Serve static files from current directory
+app.use(express.static(__dirname));
 
 // Root Route => serve index.html
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "../index.html"));
+    res.sendFile(path.join(__dirname, "index.html"));
 });
 
 // Serve index.html at /index.html as well
 app.get("/index.html", (req, res) => {
-    res.sendFile(path.join(__dirname, "../index.html"));
+    res.sendFile(path.join(__dirname, "index.html"));
 });
 
 // API Routes
